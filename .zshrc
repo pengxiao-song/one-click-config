@@ -140,6 +140,6 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
-if [ $(command -v tmux) ]; then
-    tmux attach -t default || tmux new -s default
-fi
+# if [ $(command -v tmux) ]; then
+#     tmux attach -t default || tmux new -s default
+# fi
