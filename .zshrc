@@ -122,7 +122,7 @@ onproxy
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Set personal aliases
-alias cls='clear;ls'
+alias c='clear'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
