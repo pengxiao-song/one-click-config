@@ -87,18 +87,18 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # connect reverse proxy
-onproxy() {
-    export http_proxy=http://114.212.87.152:7890
-    export https_proxy=http://114.212.87.152:7890
-    export all_proxy=socks5://114.212.87.152:7890
+setp() {
+	export http_proxy=http://114.212.87.152:7890
+	export https_proxy=http://114.212.87.152:7890
+	export all_proxy=socks5://114.212.87.152:7891
 }
 
-unproxy() {
-    export http_proxy=
-    export https_proxy=
-    export all_proxy=
+unsetp() {
+	export http_proxy=
+    	export https_proxy=
+    	export all_proxy=
 }
-onproxy
+setp
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -122,7 +122,7 @@ onproxy
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Set personal aliases
-alias cls='clear;ls'
+alias c='clear'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -140,6 +140,6 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
-if [ $(command -v tmux) ]; then
-    tmux attach -t default || tmux new -s default
-fi
+# if [ $(command -v tmux) ]; then
+#     tmux attach -t default || tmux new -s default
+# fi
